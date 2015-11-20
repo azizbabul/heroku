@@ -1,0 +1,2 @@
+module JvScriptsHelper
+end

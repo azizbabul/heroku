@@ -1,0 +1,32 @@
+<%= form_for(@jv_script) do |f| %>
+  <% if @jv_script.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@jv_script.errors.count, "error") %> prohibited this jv_script from being saved:</h2>
+
+      <ul>
+      <% @jv_script.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :depo %><br>
+    <%= f.number_field :depo %>
+  </div>
+  <div class="field">
+    <%= f.label :withd %><br>
+    <%= f.number_field :withd %>
+  </div>
+  <div class="field">
+    <%= f.label :bal %><br>
+    <%= f.number_field :bal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<%= javascript_tag do%>
+  test();
+<%end %>

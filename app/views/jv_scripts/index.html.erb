@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Jv Scripts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Depo</th>
+      <th>Withd</th>
+      <th>Bal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jv_scripts.each do |jv_script| %>
+      <tr>
+        <td><%= jv_script.depo %></td>
+        <td><%= jv_script.withd %></td>
+        <td><%= jv_script.bal %></td>
+        <td><%= link_to 'Show', jv_script %></td>
+        <td><%= link_to 'Edit', edit_jv_script_path(jv_script) %></td>
+        <td><%= link_to 'Destroy', jv_script, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Jv script', new_jv_script_path %>

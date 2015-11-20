@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  depo: 1
+  withd: 1
+  bal: 1
+
+two:
+  depo: 1
+  withd: 1
+  bal: 1

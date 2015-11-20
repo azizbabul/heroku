@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Depo:</strong>
+  <%= @jv_script.depo %>
+</p>
+
+<p>
+  <strong>Withd:</strong>
+  <%= @jv_script.withd %>
+</p>
+
+<p>
+  <strong>Bal:</strong>
+  <%= @jv_script.bal %>
+</p>
+
+<%= link_to 'Edit', edit_jv_script_path(@jv_script) %> |
+<%= link_to 'Back', jv_scripts_path %>
